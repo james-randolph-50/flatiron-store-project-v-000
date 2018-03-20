@@ -1,7 +1,15 @@
 <% if user_signed_in? %>
   <li>Hello, <%= current_user.email %></li>
+<<<<<<< HEAD
   <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
   <% else %>
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
   <% end %>
+=======
+  <li><%= link_to 'Sign out', destory_user_session_path, method: :delete %></li>
+  <% else %>
+  <li><%= link_to 'Sign in', new_user_session_path %></li>
+  <li><%= link_to 'Sign up', new_user_registration_path %></li>
+  <% end %>
+>>>>>>> 40fa763d34d5d9d5da7c7bb4ac6b114e415256ab
